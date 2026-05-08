@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDC Bank - Overview</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <div class="logo">IDC Bank</div>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <h1>Banking Built Around Your Goals</h1>
+          <p>
+            IDC Bank provides secure digital banking, smart savings, and
+            trusted support for individuals and businesses.
+          </p>
+          <a href="#contact" class="btn-primary">Open an Account</a>
+        </div>
+      </section>
+
+      <section id="services" class="section container">
+        <h2>Our Core Services</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Personal Banking</h3>
+            <p>
+              Savings and current accounts with mobile-first access and easy
+              money management.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Business Banking</h3>
+            <p>
+              Efficient payment tools, payroll support, and working capital
+              solutions.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Loans & Credit</h3>
+            <p>
+              Flexible home, auto, and business loan products with transparent
+              terms.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section section-alt">
+        <div class="container">
+          <h2>Why IDC Bank</h2>
+          <p>
+            We combine strong security standards with friendly human service.
+            From your first account to long-term investments, IDC Bank helps
+            you move forward with confidence.
+          </p>
+          <ul class="highlights">
+            <li>24/7 account access</li>
+            <li>Secure transactions and fraud monitoring</li>
+            <li>Dedicated relationship support</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <h2>Contact IDC Bank</h2>
+        <form id="contactForm" class="contact-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="How can we help you?"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn-primary">Send Message</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> IDC Bank. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
